@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miss marie longeville form</title>
+    <link rel="stylesheet" href="style.css">
+<!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="https://httpbin.org/post" method="post">
+    <!-- visua banner -->
+        <div class="banner">
+            <h1>Book at miss Maries</h1>
+        </div>
+        <!-- date input -->
+        <div class="form-area">
+            <label for="appointment-date">Choose your day</label>
+            <input type="date" name="appointment-date" id="appointment-date">
+        </div>
+        <!-- Text input -->
+        <div class="form-area">
+            <label for="full-name">Your full name</label>
+            <input type="text" name="full-name" id="full-name" required placeholder="Marie Longeville">
+        </div>
+        <!-- Telephone input -->
+        <div class="form-area">
+            <label for="telephone">Enter your Telephone</label>
+            <input type="tel" name="telephone" id="telephone" required placeholder="#######">
+        </div>
+        <!-- Email input -->
+        <div class="form-area">
+            <label for="email">Enter your Email</label>
+            <input type="email" name="email" id="email" required placeholder="miss@marie.com">
+        </div>
+        <!-- Radio input -->
+        <div class="form-area">
+            <label>Choose your Time</label>
+            <div class="radio-option">
+                <label for="class-time-1">10am</label>
+                <input type="radio" name="appointment-time" id="class-time-1" value="10am">
+            </div>
+            <div class="radio-option">
+                <label for="class-time-2">2pm</label>
+                <input type="radio" name="appointment-time" id="class-time-2" value="2pm">
+            </div>
+            <!-- Select Input -->
+            <div class="form-area">
+                <label for="choose-area">Choose your Preferences</label>
+                <select name="tattoo-preferences" id="tattoo-preferences">
+                    <option disabled selected>Choose level</option>
+                    <option value="black&grey">black&grey</option>
+                    <option value="color">color</option>
+                </select>
+            </div>
+            <!-- Checkbox Input -->
+            <div class="form-area">
+                <label for="extra-option">Choose your Wishes</label>
+                <div class="checkbox-option">
+                    <label for="Coffee">Coffee</label>
+                    <input type="checkbox" name="extra-option" id="coffee" value="coffee">
+                </div>
+                <div class="checkbox-option">
+                        <label for="water">Water</label>
+                        <input type="checkbox" name="extra-option" id="water" value="water">
+                </div>
+            </div>
+            <!-- Text Area -->
+            <div class="form-area">
+                <label for="message">Your Design</label>
+                <textarea name="message" id="message" rows="10" required placeholder="Tell me about your Tattoo Design and Idea"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <!-- <input type="button" value="Submit Form"> -->
+            <button>Submit</button>
+        </div>
+       </form> 
+    </div>
+</body>
+</html>
