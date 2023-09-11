@@ -1,3 +1,29 @@
 .container {
-    border: dotted black;
+    background-image: url(/images/but.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
+    font-family: charmonman blue;
 }
+
+.banner {
+    color: blue;
+    font-size: xx-large;
+}
+
+.form-area {
+    margin: 10px;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin: 6px;
+}
+
+input {
+    size: 20px;
+}
+
